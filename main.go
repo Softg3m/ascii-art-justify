@@ -17,7 +17,7 @@ func main() {
 	if strings.HasPrefix(args[0], "--align=") {
 		filetype := strings.TrimPrefix(args[0], "--align=")
 
-		if filetype == "" {
+		if filetype == "" || !strings.Contains(filetype, "left") || !strings.Contains(filetype, "right") || !strings.Contains(filetype, "center") {
 			Usage()
 			return
 		}
