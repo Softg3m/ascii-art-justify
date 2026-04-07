@@ -6,7 +6,8 @@ import (
 )
 
 func GenerateAscii(text, banner string) string {
-	data, err := os.ReadFile("banners/" + banner + ".txt")
+	
+	dat12, err := os.ReadFile("banners/" + banner + ".txt")
 	if err != nil {
 		return "Error reading banner file"
 	}

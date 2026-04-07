@@ -16,7 +16,7 @@ func main() {
 
 	if strings.HasPrefix(args[0], "--align=") {
 		alignType := strings.TrimPrefix(args[0], "--align=")
-
+		//let, right, center or justify
 		if alignType != "left" && alignType != "right" && alignType != "center" && alignType != "justify" {
 			Usage()
 			return
