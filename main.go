@@ -40,7 +40,7 @@ func main() {
 		ascii := GenerateAscii(text, banner)
 		lines := strings.Split(ascii, "\n")
 
-		width := 0
+		width := 150
 
 		for _, line := range lines {
 			switch alignType {
@@ -65,7 +65,6 @@ func main() {
 				}
 
 			case "justify":
-				// temporary: treat like left for now
 				fmt.Println(line)
 			}
 		}
