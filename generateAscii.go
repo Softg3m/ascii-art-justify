@@ -9,7 +9,7 @@ func GenerateAscii(text, banner string) string {
 	
 	data, err := os.ReadFile("banners/" + banner + ".txt")
 	if err != nil {
-		return "Error reading banner file"
+		return "Error reading banner file\n"
 	}
 
 	fileLines := strings.Split(string(data), "\n")
